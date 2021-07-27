@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  security:
+    user:
+      name: "admin"
+      password: "admin123"
+  boot:
+    admin:
+      notify:
+        slack:
+          webhook-url: https://hooks.slack.com/services/<channel>
+          channel: test

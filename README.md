@@ -18,3 +18,4 @@ These examples are part of Spring & Spring Boot Tutorials on https://www.amitph.
 - [Custom Health Check in Spring Boot Actuator](https://www.amitph.com/custom-health-check-spring-boot-actuator/)
 - [Introduction to Spring Boot Admin Server with Example](https://www.amitph.com/spring-boot-admin-server/)
 - [How to Secure Spring Boot Actuator Endpoints](https://www.amitph.com/how-to-secure-spring-boot-actuator-endpoints/)
+- [Spring Boot Admin Server Example](https://www.amitph.com/spring-boot-admin-server/)
