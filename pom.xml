@@ -18,6 +18,7 @@
         <module>spring-data-rest</module>
         <module>spring-data-jdbc</module>
         <module>spring-boot-command-line</module>
+        <module>spring-boot-startup-metrics</module>
     </modules>
 
     <properties>
