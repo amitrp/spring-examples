@@ -3,8 +3,10 @@ package com.amitph.spring.data.web;
 import com.amitph.spring.data.repo.Student;
 import com.amitph.spring.data.repo.StudentRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -35,6 +37,36 @@ public class StudentController {
         student.setLastName(studentDto.getLastName());
         student.setYear(studentDto.getYear());
         studentRepository.save(student);
+    }
+
+    @PatchMapping("/students/{id}")
+    public void patchResource(
+            @PathVariable long id,
+            @RequestBody StudentDto studentDto) {
+
+        Student student = studentRepository
+                .findById(id).orElseThrow(StudentNotFoundException::new);
+
+        boolean needUpdate = false;
+
+        if (StringUtils.hasLength(studentDto.getFirstName())) {
+            student.setFirstName(studentDto.getFirstName());
+            needUpdate = true;
+        }
+
+        if (StringUtils.hasLength(studentDto.getLastName())) {
+            student.setLastName(studentDto.getLastName());
+            needUpdate = true;
+        }
+
+        if (studentDto.getYear() > 0) {
+            student.setYear(studentDto.getYear());
+            needUpdate = true;
+        }
+
+        if (needUpdate) {
+            studentRepository.save(student);
+        }
     }
 
     @DeleteMapping("/students/{id}")

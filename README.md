@@ -8,3 +8,6 @@ These examples are part of Spring & Spring Boot Tutorials on https://www.amitph.
 - [Spring Data JDBC Tutorial with Examples](https://www.amitph.com/introduction-spring-data-jdbc/)
 - [Unit Tests for Spring Data JDBC Repositories](https://www.amitph.com/testing-spring-data-jdbc/)
 - [How to Write a non-web Application with Spring Boot](https://www.amitph.com/non-web-application-spring-boot/)
+- [CRUD REST Service With Spring Boot, Hibernate, and JPA](https://www.amitph.com/spring-boot-crud-hibernate-jpa/)
+- [Understand Http PUT vs PATCH with Examples](https://www.amitph.com/http-put-vs-patch/)
+- [Enable Spring Boot ApplicationStartup Metrics to Diagnose Slow Startup](https://www.amitph.com/spring-boot-startup-monitoring/)
