@@ -27,7 +27,40 @@
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>
     </properties>
-
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.amitph.spring</groupId>
+                <artifactId>spring-boot-data-jpa</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.amitph.spring</groupId>
+                <artifactId>spring-boot-command-line</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.amitph.spring</groupId>
+                <artifactId>spring-boot-startup-metrics</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.amitph.spring</groupId>
+                <artifactId>spring-data-jdbc</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.amitph.spring</groupId>
+                <artifactId>spring-data-rest</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.amitph.spring</groupId>
+                <artifactId>spring-scheduled-tasks</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>

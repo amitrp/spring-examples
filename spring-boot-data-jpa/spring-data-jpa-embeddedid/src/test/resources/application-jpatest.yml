@@ -1,0 +1,6 @@
+spring:
+  jpa:
+    show-sql: true
+
+  datasource:
+    platform: test

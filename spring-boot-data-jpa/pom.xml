@@ -15,9 +15,45 @@
         <module>spring-boot-data-jpa-h2</module>
         <module>spring-boot-data-jpa-postgres</module>
         <module>spring-boot-data-jpa-mssqlserver</module>
+        <module>spring-data-jpa-embeddedid</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>16</java.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.amitph.spring</groupId>
+                <artifactId>spring-boot-command-line</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.amitph.spring</groupId>
+                <artifactId>spring-boot-data-jpa-h2</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.amitph.spring</groupId>
+                <artifactId>spring-boot-data-jpa-mssqlserver</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.amitph.spring</groupId>
+                <artifactId>spring-boot-data-jpa-mysql</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.amitph.spring</groupId>
+                <artifactId>spring-boot-data-jpa-postgres</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.amitph.spring</groupId>
+                <artifactId>spring-data-jpa-embeddedid</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

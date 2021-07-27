@@ -12,3 +12,5 @@ These examples are part of Spring & Spring Boot Tutorials on https://www.amitph.
 - [Understand Http PUT vs PATCH with Examples](https://www.amitph.com/http-put-vs-patch/)
 - [Enable Spring Boot ApplicationStartup Metrics to Diagnose Slow Startup](https://www.amitph.com/spring-boot-startup-monitoring/)
 - [Scheduled Tasks in Spring with @Scheduled](https://www.amitph.com/scheduled-tasks-in-spring/)
+- [Spring Data JPA Composite Key with @EmbeddedId](https://www.amitph.com/spring-data-jpa-embeddedid/) 
+- [Spring Data JPA find by @EmbeddedId Partially](https://www.amitph.com/spring-data-jpa-find-by-embeddedid-partially/)

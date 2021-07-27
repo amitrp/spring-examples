@@ -19,4 +19,19 @@
         <module>projection-excerpts</module>
         <module>crud-example</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.amitph.spring</groupId>
+                <artifactId>crud-example</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.amitph.spring</groupId>
+                <artifactId>projection-excerpts</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
