@@ -19,6 +19,7 @@
         <module>spring-data-jdbc</module>
         <module>spring-boot-command-line</module>
         <module>spring-boot-startup-metrics</module>
+        <module>spring-scheduled-tasks</module>
     </modules>
 
     <properties>
