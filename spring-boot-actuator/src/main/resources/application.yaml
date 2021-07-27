@@ -1,0 +1,30 @@
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+spring:
+  boot:
+    admin:
+      client:
+        url: [http://localhost:8080]
+        username: "admin"
+        password: "admin123"
+        instance:
+          metadata:
+            user.name: client
+            user.password: clientPassword
+  application:
+    name: Songs Service
+  security:
+    user:
+      name: client
+      password: clientPassword
+
+server:
+  port: 8081
+

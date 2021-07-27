@@ -14,3 +14,7 @@ These examples are part of Spring & Spring Boot Tutorials on https://www.amitph.
 - [Scheduled Tasks in Spring with @Scheduled](https://www.amitph.com/scheduled-tasks-in-spring/)
 - [Spring Data JPA Composite Key with @EmbeddedId](https://www.amitph.com/spring-data-jpa-embeddedid/) 
 - [Spring Data JPA find by @EmbeddedId Partially](https://www.amitph.com/spring-data-jpa-find-by-embeddedid-partially/)
+- [Spring Boot Actuator with Spring Boot 2](https://www.amitph.com/spring-boot-actuator-spring-boot-2/)
+- [Custom Health Check in Spring Boot Actuator](https://www.amitph.com/custom-health-check-spring-boot-actuator/)
+- [Introduction to Spring Boot Admin Server with Example](https://www.amitph.com/spring-boot-admin-server/)
+- [How to Secure Spring Boot Actuator Endpoints](https://www.amitph.com/how-to-secure-spring-boot-actuator-endpoints/)

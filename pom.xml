@@ -20,6 +20,7 @@
         <module>spring-boot-command-line</module>
         <module>spring-boot-startup-metrics</module>
         <module>spring-scheduled-tasks</module>
+        <module>spring-boot-actuator</module>
     </modules>
 
     <properties>
@@ -57,6 +58,11 @@
             <dependency>
                 <groupId>com.amitph.spring</groupId>
                 <artifactId>spring-scheduled-tasks</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.amitph.spring</groupId>
+                <artifactId>spring-boot-actuator</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
         </dependencies>
