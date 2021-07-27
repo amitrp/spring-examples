@@ -1,0 +1,17 @@
+spring:
+  liquibase:
+    change-log: classpath:db/liquibase-changelog.xml
+  datasource:
+    username: "root"
+    password: "password"
+    url: "jdbc:mysql://localhost:33099/testdb"
+    driverClassName: "com.mysql.cj.jdbc.Driver"
+
+logging:
+  level:
+    root: INFO
+  liquibase: INFO
+  com:
+    amitph: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} | %-5p | %X{mdcData} | [%thread] %logger{5}:%L - %msg%n"
