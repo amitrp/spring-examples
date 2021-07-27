@@ -1,0 +1,9 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    driverClassName: "org.postgresql.Driver"
+    url: "jdbc:postgresql://localhost:54032/postgres"
+    username: "postgres"
+    password: "password" ##Enter your root password

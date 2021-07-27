@@ -1,0 +1,9 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    username: "root"
+    password: "password" ##Enter your root password
+    url: "jdbc:mysql://localhost:33080/studentsdb"
+    driverClassName: "com.mysql.cj.jdbc.Driver"

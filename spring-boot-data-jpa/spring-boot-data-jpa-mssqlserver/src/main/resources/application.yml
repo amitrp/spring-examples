@@ -1,0 +1,9 @@
+server:
+  port: 8084
+
+spring:
+  datasource:
+    username: "sa"
+    password: "password" ##Enter your root password
+    url: "jdbc:sqlserver://localhost:14033"
+    driverClassName: "com.microsoft.sqlserver.jdbc.SQLServerDriver"

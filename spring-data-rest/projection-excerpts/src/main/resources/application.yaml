@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    username: "root"
+    password: "password"
+    url: "jdbc:mysql://localhost:33099/testdb"
+    driverClassName: "com.mysql.cj.jdbc.Driver"
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: false
