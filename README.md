@@ -19,3 +19,6 @@ These examples are part of Spring & Spring Boot Tutorials on https://www.amitph.
 - [Introduction to Spring Boot Admin Server with Example](https://www.amitph.com/spring-boot-admin-server/)
 - [How to Secure Spring Boot Actuator Endpoints](https://www.amitph.com/how-to-secure-spring-boot-actuator-endpoints/)
 - [Spring Boot Admin Server Example](https://www.amitph.com/spring-boot-admin-server/)
+- [Spring Data and JPA Tutorial](https://www.amitph.com/spring-data-and-jpa-tutorial/)
+- [Wildcard Queries with Spring Data JPA](https://www.amitph.com/spring-data-and-jpa-tutorial/)
+- [Spring Boot Runners – Application Runner and Command Line Runner](https://www.amitph.com/spring-boot-runners/)

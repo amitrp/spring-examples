@@ -13,7 +13,7 @@ git clone https://github.com/amitrp/spring-examples.git
 
 #### Move to the module
 ```
-cd spring-boot-startup-metrics/
+cd spring-examples/spring-boot-startup-metrics/
 ```
 
 #### Run the Application

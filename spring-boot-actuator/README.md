@@ -19,7 +19,7 @@ git clone https://github.com/amitrp/spring-examples.git
 
 #### Move to the module
 ```
-cd spring-boot-actuator/
+cd spring-examples/spring-boot-actuator/
 ```
 
 #### Run the Application

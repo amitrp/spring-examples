@@ -15,7 +15,7 @@ git clone https://github.com/amitrp/spring-examples.git
 
 #### Move to the spring-boot-command-line module
 ```
-cd spring-boot-command-line 
+cd spring-examples/spring-boot-command-line 
 ```
 
 #### Start the application and pass a few arguments

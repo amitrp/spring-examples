@@ -3,20 +3,21 @@
 ## Referenced Tutorial
 
 - [Spring Data REST Projections and Excerpts](https://www.amitph.com/spring-data-rest-projections-and-excerpts/)
+
 ## How to Run
 
 ### Git Checkout
 ```
-~ git clone https://github.com/amitrp/spring-boot-data-jpa.git
+~ git clone https://github.com/amitrp/spring-examples.git
+~ cd spring-examples/spring-data-rest/projection-excerpts
 ```
 
-### To launch a MySQL instance
+### To launch a MySQL instance (Optional)
 ```
-~ docker-compose -f spring-data-rest/projection-excerpts/docker/docker-compose.yml up -d
+~ docker-compose -f docker/docker-compose.yml up -d
 ```
 
-### Move to the module & Launch application
+### Launch application
 ```
-~ cd spring-data-rest/projection-excerpts
 ~ mvn spring-boot:run
 ```  

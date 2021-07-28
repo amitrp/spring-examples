@@ -16,12 +16,12 @@ git clone https://github.com/amitrp/spring-examples.git
 
 #### Move to the spring-data-jdbc module
 ```
-cd spring-data-jdbc/
+cd spring-example/spring-data-jdbc/
 ```
 
 #### Run MySQL Docker (Optional)
 ```
-docker-compose -f docker-mysql/docker-compose.yml up -d 
+docker-compose -f docker/docker-compose.yml up -d 
 ```
 
 #### Run the Application

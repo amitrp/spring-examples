@@ -10,8 +10,10 @@ import java.util.stream.Collectors;
 
 @Component
 public class SongService {
-    @Autowired SongRepository repository;
-    @Autowired SongTransformer transformer;
+    @Autowired
+    SongRepository repository;
+    @Autowired
+    SongTransformer transformer;
 
     public List<SongDto> getAllSongs() {
         return repository.findAll().stream().map(transformer::transform).collect(Collectors.toList());

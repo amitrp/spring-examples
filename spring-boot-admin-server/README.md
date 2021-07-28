@@ -10,14 +10,13 @@ This repository is part of [amitph.com](https://www.amitph.com/) tutorials.
 ## How to Use
 
 #### Clone this Git repository
-
 ```
 git clone https://github.com/amitrp/spring-examples.git
 ```
 
 #### Move to the module
 ```
-cd spring-boot-admin-server/
+cd spring-examples/spring-boot-admin-server/
 ```
 
 #### Run the Application
