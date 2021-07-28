@@ -23,6 +23,7 @@
         <module>spring-boot-actuator</module>
         <module>spring-boot-admin-server</module>
         <module>spring-boot-jpa-dog-service</module>
+        <module>spring-boot-dog-service</module>
     </modules>
 
     <properties>
@@ -75,6 +76,11 @@
             <dependency>
                 <groupId>com.amitph.spring</groupId>
                 <artifactId>spring-boot-jpa-dog-service</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.amitph.spring</groupId>
+                <artifactId>spring-boot-dog-service</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
         </dependencies>
