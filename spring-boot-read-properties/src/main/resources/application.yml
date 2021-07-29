@@ -1,0 +1,16 @@
+default-username: default_user
+default-password: password_default
+connection-timeout: 2000
+
+login-service:
+  login-url: https://login.example.com
+  username: login_user
+  password: password123
+  header:
+    auth_token: TOKEN
+    content: C_TYPE
+
+user-service:
+  url: https://users.example.com
+  username: user_name
+  password: strong-password
