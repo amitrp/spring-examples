@@ -23,3 +23,4 @@ These examples are part of Spring & Spring Boot Tutorials on https://www.amitph.
 - [Wildcard Queries with Spring Data JPA](https://www.amitph.com/spring-data-and-jpa-tutorial/)
 - [Spring Boot Runners – Application Runner and Command Line Runner](https://www.amitph.com/spring-boot-runners/)
 - [Spring Boot Rest Service](https://www.amitph.com/spring-boot-rest-service/)
+- [Downloading Large Files using Spring WebClient](https://www.amitph.com/spring-webclient-large-file-download/)
