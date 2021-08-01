@@ -22,8 +22,7 @@ public class WebClientService {
     /**
      * Reads the complete file in-memory. Thus, only useful for very large file
      */
-    public void downloadAsByteArray(Path destination) throws IOException {
-
+    public void downloadUsingByteArray(Path destination) throws IOException {
         Mono<byte[]> monoContents = webClient
                 .get()
                 .uri("/largefiles/1")
