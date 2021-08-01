@@ -30,10 +30,10 @@ public class PropertiesPrinter {
         System.out.println("* User Service Properties");
         System.out.println(userServiceProperties);
 
-        System.out.println("* SetterBasedLoginProperties");
+        System.out.println("* Setter Based Properties");
         System.out.println(setterBasedLoginProperties);
 
-        System.out.println("* DifferentlyNamedProperties");
+        System.out.println("* Differently Named Properties");
         System.out.println(differentlyNamedProperties);
     }
 }
