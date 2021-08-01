@@ -18,7 +18,7 @@ public class FileDownloader {
     @PostConstruct
     public void onApplicationEvent() throws IOException {
         Path output = Paths.get(props.getOutputPath());
-        //webClientService.downloadAsByteArray(output);
+        //webClientService.downloadUsingByteArray(output);
         //webClientService.downloadUsingMono(output);
         webClientService.downloadUsingFlux(output);
     }
