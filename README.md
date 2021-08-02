@@ -25,3 +25,7 @@ These examples are part of Spring & Spring Boot Tutorials on https://www.amitph.
 - [Spring Boot Rest Service](https://www.amitph.com/spring-boot-rest-service/)
 - [Downloading Large Files using Spring WebClient](https://www.amitph.com/spring-webclient-large-file-download/)
 - [Spring @RequestParam Annotation with Examples](https://www.amitph.com/spring-requestparam-annotation/)
+- [Introduction to Spring WebClient](https://www.amitph.com/introduction-to-spring-webclient/)
+- [Configure timeout for Spring WebFlux WebClient](https://www.amitph.com/spring-webflux-timeouts/)
+- [How to Read JSON Data with WebClient](https://www.amitph.com/spring-webclient-read-json-data/)
+- [Add URI Parameters to Spring WebClient Requests](https://www.amitph.com/spring-webclient-request-parameters/)
