@@ -1,5 +1,5 @@
 # Spring Boot Examples
-Examples of using features in Spring Boot
+Examples of using various features in Spring Boot
 These examples are part of Spring & Spring Boot Tutorials on [amitph.com](https://www.amitph.com/)
 
 
