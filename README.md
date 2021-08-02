@@ -24,3 +24,4 @@ These examples are part of Spring & Spring Boot Tutorials on https://www.amitph.
 - [Spring Boot Runners – Application Runner and Command Line Runner](https://www.amitph.com/spring-boot-runners/)
 - [Spring Boot Rest Service](https://www.amitph.com/spring-boot-rest-service/)
 - [Downloading Large Files using Spring WebClient](https://www.amitph.com/spring-webclient-large-file-download/)
+- [Spring @RequestParam Annotation with Examples](https://www.amitph.com/spring-requestparam-annotation/)
