@@ -1,29 +1,52 @@
 # Reading Properties in Spring Boot using @ConfigurationProperties
-_Covers a different examples of reading and binding properties file or yaml file configurations in a Java Class._ 
+
+_Covers a different examples of reading and binding properties file or yaml file configurations in a Java Class._
 
 ## This repository is part of [amitph.com](https://www.amitph.com/) tutorials.
-> - [Using @ConfigurationProperties in Spring Boot](https://www.amitph.com/)
+
+> - Using @ConfigurationProperties in Spring Boot
+> - Reading Nested Properties in Spring Boot
+> - YAML to Map with Spring Boot
+> - YAML to Java List of Objects in Spring Boot
 
 ## Examples
 
-### Reading Simple Properties File
+#### Reading Simple Properties File
+
 - [SimpleProperties.java](/src/main/java/com/amitph/spring/properties/SimpleProperties.java)
 
-### Reading properties subsets using `prefix` attribute
+#### Reading properties subsets using `prefix` attribute
+
 - [UserServiceProperties.java](/src/main/java/com/amitph/spring/properties/prefixed/UserServiceProperties.java)
 - [LoginServiceProperties.java](/src/main/java/com/amitph/spring/properties/prefixed/LoginServiceProperties.java)
 
-## Binding properties of a different names
+#### Binding properties of a different names
+
 - [DifferentlyNamedProperties.java](/src/main/java/com/amitph/spring/properties/prefixed/DifferentlyNamedProperties.java)
 
-## Setter Injected and Constructor Injected Properties
+#### Setter Injected and Constructor Injected Properties
+
 - [SetterBasedLoginProperties.java](/src/main/java/com/amitph/spring/properties/SetterBasedLoginProperties.java)
 - [ConstructorBasedLoginProperties.java](/src/main/java/com/amitph/spring/properties/ConstructorBasedLoginProperties.java)
 
+#### Nested Properties
+
+- [NestedProperties.java](/src/main/java/com/amitph/spring/properties/nested/NestedProperties.java)
+
+#### Nested Properties using Java Inner Classes
+
+- [NestedClassesProperties.java](/src/main/java/com/amitph/spring/properties/nested/NestedClassesProperties.java)
+
+#### Reading YAML/Properties as Java HashMap
+
+- [MapProperties.java](/src/main/java/com/amitph/spring/properties/map/MapProperties.java)
+
+#### YAML/Properties as Java Nested Hashmap or MultiValueMap
+
+- [NestedMapProperties.java](/src/main/java/com/amitph/spring/properties/map/NestedMapProperties.java)
 
 ## How to Run
 
-### Git Checkout
 ```
 ~ git clone https://github.com/amitrp/spring-examples.git
 ~ cd spring-examples/spring-boot-read-properties

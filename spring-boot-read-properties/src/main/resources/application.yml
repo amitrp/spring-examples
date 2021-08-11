@@ -14,3 +14,21 @@ user-service:
   url: https://users.example.com
   username: user_name
   password: strong-password
+
+spring:
+  application:
+    name: data-service
+  servlet:
+    multipart:
+      enabled: true
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3309/test
+    password: password
+    username: test_user
+  profiles:
+    active:
+      - dev
+      - qa
+      - staging
+      - prod

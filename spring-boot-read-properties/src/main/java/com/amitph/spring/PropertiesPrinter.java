@@ -1,8 +1,12 @@
 package com.amitph.spring;
 
-import com.amitph.spring.properties.prefixed.DifferentlyNamedProperties;
 import com.amitph.spring.properties.SetterBasedLoginProperties;
 import com.amitph.spring.properties.SimpleProperties;
+import com.amitph.spring.properties.map.MapProperties;
+import com.amitph.spring.properties.map.NestedMapProperties;
+import com.amitph.spring.properties.nested.NestedClassesProperties;
+import com.amitph.spring.properties.nested.NestedProperties;
+import com.amitph.spring.properties.prefixed.DifferentlyNamedProperties;
 import com.amitph.spring.properties.prefixed.LoginServiceProperties;
 import com.amitph.spring.properties.prefixed.UserServiceProperties;
 import lombok.RequiredArgsConstructor;
@@ -18,6 +22,10 @@ public class PropertiesPrinter {
     private final UserServiceProperties userServiceProperties;
     private final SetterBasedLoginProperties setterBasedLoginProperties;
     private final DifferentlyNamedProperties differentlyNamedProperties;
+    private final NestedProperties nestedProperties;
+    private final NestedClassesProperties nestedClassesProperties;
+    private final MapProperties mapProperties;
+    private final NestedMapProperties nestedMapProperties;
 
     @PostConstruct
     public void print() {
@@ -35,5 +43,17 @@ public class PropertiesPrinter {
 
         System.out.println("* Differently Named Properties");
         System.out.println(differentlyNamedProperties);
+
+        System.out.println("* Nested Properties");
+        System.out.println(nestedProperties);
+
+        System.out.println("* Nested Properties with Inner Classes");
+        System.out.println(nestedClassesProperties);
+
+        System.out.println("* Java Map based Properties");
+        System.out.println(mapProperties);
+
+        System.out.println("* Java Map based nested Properties");
+        System.out.println(nestedMapProperties);
     }
 }
