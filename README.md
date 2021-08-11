@@ -29,3 +29,4 @@ These examples are part of Spring & Spring Boot Tutorials on https://www.amitph.
 - [Configure timeout for Spring WebFlux WebClient](https://www.amitph.com/spring-webflux-timeouts/)
 - [How to Read JSON Data with WebClient](https://www.amitph.com/spring-webclient-read-json-data/)
 - [Add URI Parameters to Spring WebClient Requests](https://www.amitph.com/spring-webclient-request-parameters/)
+- [Spring Boot - Spring Data JPA - MySQL Example](https://www.amitph.com/spring-boot-data-jpa-mysql/)
