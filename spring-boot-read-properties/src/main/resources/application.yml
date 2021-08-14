@@ -31,4 +31,28 @@ spring:
       - dev
       - qa
       - staging
-      - prod
+      - PROD
+
+config:
+  env:
+    - dev
+    - qa
+    - prod
+  miscellaneous:
+    -
+      poll-frequency: 20
+      timeout: 10
+      max-retry: 3
+    -
+      log-erros: true
+      fail-on-errors: false
+    -
+      publish-metrics: true
+      metrics-frequency: 30
+  services:
+    -
+      name: login-service
+      url: http://login.example.com
+    -
+      name: data-service
+      url: http://data.example.com
