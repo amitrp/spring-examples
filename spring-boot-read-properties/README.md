@@ -14,7 +14,7 @@ _Covers a different examples of reading and binding properties file or yaml file
 
 #### Reading Simple Properties File
 
-- [SimpleProperties.java](/src/main/java/com/amitph/spring/properties/SimpleProperties.java)
+- [SimpleProperties.java](./src/main/java/com/amitph/spring/properties/SimpleProperties.java)
 
 #### Reading properties subsets using `prefix` attribute
 
