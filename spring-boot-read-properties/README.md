@@ -8,6 +8,7 @@ _Covers a different examples of reading and binding properties file or yaml file
 > - Reading Nested Properties in Spring Boot
 > - YAML to Map with Spring Boot
 > - YAML to Java List of Objects in Spring Boot
+> - Validations with @ConfigurationProperties in Spring Boot
 
 ## Examples
 
@@ -45,8 +46,26 @@ _Covers a different examples of reading and binding properties file or yaml file
 
 - [NestedMapProperties.java](/src/main/java/com/amitph/spring/properties/map/NestedMapProperties.java)
 
-## How to Run
+#### YAML/Properties as Java plain List
 
+- [PlainListProperties.java](/src/main/java/com/amitph/spring/properties/list/PlainListProperties.java)
+
+#### YAML/Properties as Java List of Map
+
+- [ListOfMapProperties.java](/src/main/java/com/amitph/spring/properties/list/ListOfMapProperties.java)
+
+#### YAML/Properties as Java List of Objects
+
+- [ListOfObjectProperties.java](/src/main/java/com/amitph/spring/properties/list/ListOfObjectProperties.java)
+
+#### Validating Configuration Properties
+
+- [ValidatedProperties.java](/src/main/java/com/amitph/spring/properties/validated/ValidatedProperties.java)
+
+
+
+
+## How to Run
 ```
 ~ git clone https://github.com/amitrp/spring-examples.git
 ~ cd spring-examples/spring-boot-read-properties
