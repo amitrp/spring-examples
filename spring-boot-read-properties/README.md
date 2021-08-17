@@ -14,53 +14,53 @@ _Covers a different examples of reading and binding properties file or yaml file
 
 #### Reading Simple Properties File
 
-- [SimpleProperties.java](/src/main/java/com/amitph/spring/properties/SimpleProperties.java)
+- [SimpleProperties.java](src/main/java/com/amitph/spring/properties/SimpleProperties.java)
 
 #### Reading properties subsets using `prefix` attribute
 
-- [UserServiceProperties.java](/src/main/java/com/amitph/spring/properties/prefixed/UserServiceProperties.java)
-- [LoginServiceProperties.java](/src/main/java/com/amitph/spring/properties/prefixed/LoginServiceProperties.java)
+- [UserServiceProperties.java](src/main/java/com/amitph/spring/properties/prefixed/UserServiceProperties.java)
+- [LoginServiceProperties.java](src/main/java/com/amitph/spring/properties/prefixed/LoginServiceProperties.java)
 
 #### Binding properties of a different names
 
-- [DifferentlyNamedProperties.java](/src/main/java/com/amitph/spring/properties/prefixed/DifferentlyNamedProperties.java)
+- [DifferentlyNamedProperties.java](src/main/java/com/amitph/spring/properties/prefixed/DifferentlyNamedProperties.java)
 
 #### Setter Injected and Constructor Injected Properties
 
-- [SetterBasedLoginProperties.java](/src/main/java/com/amitph/spring/properties/SetterBasedLoginProperties.java)
-- [ConstructorBasedLoginProperties.java](/src/main/java/com/amitph/spring/properties/ConstructorBasedLoginProperties.java)
+- [SetterBasedLoginProperties.java](src/main/java/com/amitph/spring/properties/SetterBasedLoginProperties.java)
+- [ConstructorBasedLoginProperties.java](src/main/java/com/amitph/spring/properties/ConstructorBasedLoginProperties.java)
 
 #### Nested Properties
 
-- [NestedProperties.java](/src/main/java/com/amitph/spring/properties/nested/NestedProperties.java)
+- [NestedProperties.java](src/main/java/com/amitph/spring/properties/nested/NestedProperties.java)
 
 #### Nested Properties using Java Inner Classes
 
-- [NestedClassesProperties.java](/src/main/java/com/amitph/spring/properties/nested/NestedClassesProperties.java)
+- [NestedClassesProperties.java](src/main/java/com/amitph/spring/properties/nested/NestedClassesProperties.java)
 
 #### Reading YAML/Properties as Java HashMap
 
-- [MapProperties.java](/src/main/java/com/amitph/spring/properties/map/MapProperties.java)
+- [MapProperties.java](src/main/java/com/amitph/spring/properties/map/MapProperties.java)
 
 #### YAML/Properties as Java Nested Hashmap or MultiValueMap
 
-- [NestedMapProperties.java](/src/main/java/com/amitph/spring/properties/map/NestedMapProperties.java)
+- [NestedMapProperties.java](src/main/java/com/amitph/spring/properties/map/NestedMapProperties.java)
 
 #### YAML/Properties as Java plain List
 
-- [PlainListProperties.java](/src/main/java/com/amitph/spring/properties/list/PlainListProperties.java)
+- [PlainListProperties.java](src/main/java/com/amitph/spring/properties/list/PlainListProperties.java)
 
 #### YAML/Properties as Java List of Map
 
-- [ListOfMapProperties.java](/src/main/java/com/amitph/spring/properties/list/ListOfMapProperties.java)
+- [ListOfMapProperties.java](src/main/java/com/amitph/spring/properties/list/ListOfMapProperties.java)
 
 #### YAML/Properties as Java List of Objects
 
-- [ListOfObjectProperties.java](/src/main/java/com/amitph/spring/properties/list/ListOfObjectProperties.java)
+- [ListOfObjectProperties.java](src/main/java/com/amitph/spring/properties/list/ListOfObjectProperties.java)
 
 #### Validating Configuration Properties
 
-- [ValidatedProperties.java](/src/main/java/com/amitph/spring/properties/validated/ValidatedProperties.java)
+- [ValidatedProperties.java](src/main/java/com/amitph/spring/properties/validated/ValidatedProperties.java)
 
 
 
