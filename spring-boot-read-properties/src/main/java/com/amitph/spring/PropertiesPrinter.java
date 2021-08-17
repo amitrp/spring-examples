@@ -13,6 +13,7 @@ import com.amitph.spring.properties.prefixed.DifferentlyNamedProperties;
 import com.amitph.spring.properties.prefixed.LoginServiceProperties;
 import com.amitph.spring.properties.prefixed.UserServiceProperties;
 import com.amitph.spring.properties.set.SetOfObjectProperties;
+import com.amitph.spring.properties.validated.ValidatedProperties;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 
@@ -34,6 +35,7 @@ public class PropertiesPrinter {
     private final ListOfMapProperties listOfMapProperties;
     private final ListOfObjectProperties listOfObjectProperties;
     private final SetOfObjectProperties setOfObjectProperties;
+    private final ValidatedProperties validatedProperties;
 
     @PostConstruct
     public void print() {
@@ -88,6 +90,10 @@ public class PropertiesPrinter {
 
         System.out.println("* Java Set of Object based Properties");
         System.out.println(setOfObjectProperties);
+        System.out.println();
+
+        System.out.println("* Validated Properties");
+        System.out.println(validatedProperties);
         System.out.println();
     }
 }

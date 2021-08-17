@@ -56,3 +56,11 @@ config:
     -
       name: data-service
       url: http://data.example.com
+
+
+connection:
+  host: 192.0.2.1
+  port: 8181
+  timeout: 30000
+  notify: support@example.com
+  error-file: logs/error.log
