@@ -1,0 +1,7 @@
+logging:
+  level:
+    root: INFO
+  com:
+    amitph: DEBUG
+  pattern:
+    console: "%-5p | [%thread] %logger{5}:%L - %msg%n"

@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.5.3</version>
+        <version>2.5.4</version>
     </parent>
 
     <groupId>com.amitph.spring</groupId>
@@ -27,6 +27,7 @@
         <module>spring-boot-read-properties</module>
         <module>spring-webflux-webclient</module>
         <module>spring-boot-samples</module>
+        <module>spring-boot-exit-codes</module>
     </modules>
 
     <properties>
@@ -99,6 +100,11 @@
             <dependency>
                 <groupId>com.amitph.spring</groupId>
                 <artifactId>spring-boot-samples</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.amitph.spring</groupId>
+                <artifactId>spring-boot-exit-codes</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
         </dependencies>
