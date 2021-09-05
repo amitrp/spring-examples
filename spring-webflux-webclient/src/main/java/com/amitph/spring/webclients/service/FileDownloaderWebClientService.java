@@ -16,7 +16,7 @@ import java.util.Objects;
 
 @Service
 @RequiredArgsConstructor
-public class WebClientService {
+public class FileDownloaderWebClientService {
     private final WebClient webClient;
 
     /**
