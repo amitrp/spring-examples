@@ -3,6 +3,7 @@ package com.amitph.spring.dogs.service;
 import com.amitph.spring.dogs.model.DogDto;
 import com.amitph.spring.dogs.repo.Dog;
 import com.amitph.spring.dogs.repo.DogsRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -10,8 +11,9 @@ import java.util.List;
 import java.util.Optional;
 
 @Component
+@RequiredArgsConstructor
 public class DogsService {
-    @Autowired DogsRepository repository;
+    private final DogsRepository repository;
 
     public void add(DogDto dto) {
         repository.save(toEntity(dto));
