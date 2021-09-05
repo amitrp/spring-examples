@@ -8,6 +8,7 @@ import com.amitph.spring.songs.repo.Song;
 import com.amitph.spring.songs.repo.SongId;
 import com.amitph.spring.songs.repo.SongsRepository;
 import com.amitph.spring.songs.web.SongNotFoundException;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Component;
@@ -15,9 +16,10 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
+@RequiredArgsConstructor
 public class SongsService {
-    @Autowired SongsRepository repository;
-    @Autowired LongKeySongRepository longKeySongRepository;
+    private final SongsRepository repository;
+    private  final LongKeySongRepository longKeySongRepository;
 
     public Song addSong(SongDto dto) {
         return repository.save(dtoToSong(dto));

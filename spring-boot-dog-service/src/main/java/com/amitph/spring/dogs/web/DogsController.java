@@ -21,7 +21,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Setter
 public class DogsController {
-    @Autowired private final DogsService service;
+    private final DogsService service;
 
     @GetMapping
     public List<Dog> getDogs() {

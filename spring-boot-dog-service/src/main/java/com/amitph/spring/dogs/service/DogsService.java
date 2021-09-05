@@ -14,7 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Setter
 public class DogsService {
-    @Autowired private final MockDogProvider mockDogProvider;
+    private final MockDogProvider mockDogProvider;
 
     public void add(DogDto dto) {
         mockDogProvider.add(dto);

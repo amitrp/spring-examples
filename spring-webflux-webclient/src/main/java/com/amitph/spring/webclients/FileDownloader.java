@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 @Component
 @RequiredArgsConstructor
 public class FileDownloader {
-    private final WebClientService webClientService;
+    private final FileDownloaderWebClientService webClientService;
     private final ApplicationProperties props;
 
     @PostConstruct

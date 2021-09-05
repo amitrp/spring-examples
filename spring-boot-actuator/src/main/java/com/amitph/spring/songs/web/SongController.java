@@ -1,6 +1,7 @@
 package com.amitph.spring.songs.web;
 
 import com.amitph.spring.songs.service.SongService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,9 +13,9 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/songs")
+@RequiredArgsConstructor
 public class SongController {
-    @Autowired SongService songService;
-
+    private final SongService songService;
 
     @GetMapping
     public List<SongDto> getAll() {
