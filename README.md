@@ -32,3 +32,4 @@ These examples are part of Spring & Spring Boot Tutorials on https://www.amitph.
 - [Spring Boot - Spring Data JPA - MySQL Example](https://www.amitph.com/spring-boot-data-jpa-mysql/)
 - [Spring Boot - Spring Data JPA - Postgres Example](https://www.amitph.com/spring-boot-data-jpa-postgres/)
 - [Spring Boot Exit Codes Examples with Exception Mapping](https://www.amitph.com/spring-boot-exit-codes/)
+- [Using @ConfigurationProperties in Spring Boot](https://www.amitph.com/spring-boot-configuration-properties/)
