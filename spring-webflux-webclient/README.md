@@ -7,6 +7,7 @@ These examples are part of Spring & Spring Boot Tutorials on [amitph.com](https:
 - [How to Read JSON Data with WebClient](https://www.amitph.com/spring-webclient-read-json-data/)
 - [Add URI Parameters to Spring WebClient Requests](https://www.amitph.com/spring-webclient-request-parameters/)
 - [Downloading Large Files using Spring WebClient](https://www.amitph.com/spring-webclient-large-file-download/)
+- Parallel Requests with Spring WebClient
 
 ## How to Use
 

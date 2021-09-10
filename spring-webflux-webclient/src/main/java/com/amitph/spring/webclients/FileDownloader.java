@@ -1,6 +1,6 @@
-package com.amitph.spring.webclients.service;
+package com.amitph.spring.webclients;
 
-import com.amitph.spring.webclients.ApplicationProperties;
+import com.amitph.spring.webclients.service.FileDownloaderWebClientService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
