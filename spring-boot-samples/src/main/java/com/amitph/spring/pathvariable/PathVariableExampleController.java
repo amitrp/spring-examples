@@ -22,9 +22,9 @@ public class PathVariableExampleController {
 
     @GetMapping("/v3/students/{id}/terms/{termId}")
     public String mapPathVariableByName(
-            @PathVariable String studentId,
+            @PathVariable String id,
             @PathVariable String termId) {
-        return "id: " + studentId + ", term id: " + termId;
+        return "id: " + id + ", term id: " + termId;
     }
 
     @GetMapping("/v4/students/{id}/terms/{termId}")
