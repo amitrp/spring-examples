@@ -5,7 +5,7 @@ These examples are part of Spring & Spring Boot Tutorials on [amitph.com](https:
 
 - [Spring @RequestParam Annotation with Examples](https://www.amitph.com/spring-requestparam-annotation/)
 - [Reading HTTP Headers in Spring REST Controller](https://www.amitph.com/spring-rest-http-header/)
-- 
+- Spring @PathVariable Examples
 
 
 ## How to Use
