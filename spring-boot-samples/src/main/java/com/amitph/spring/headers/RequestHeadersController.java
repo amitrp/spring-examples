@@ -21,7 +21,6 @@ public class RequestHeadersController {
             @RequestHeader Map<String, String> headers,
             @RequestBody Student student) {
 
-        log.info("Request to create student: {}", student);
         log.info("Header values: {}", headers);
     }
 
@@ -29,7 +28,7 @@ public class RequestHeadersController {
     public void postStudent(
             @RequestHeader HttpHeaders headers,
             @RequestBody Student student) {
-        log.info("Request to create student: {}", student);
+
         log.info("Header values: {}", headers);
     }
 
@@ -38,7 +37,6 @@ public class RequestHeadersController {
             @RequestHeader MultiValueMap<String, String> headers,
             @RequestBody Student student) {
 
-        log.info("Request to create student: {}", student);
         log.info("Header values: {}", headers);
     }
 
@@ -50,7 +48,6 @@ public class RequestHeadersController {
                     String contentType,
             @RequestBody Student student) {
 
-        log.info("Request to create student: {}", student);
         log.info("Header value - Content-Type: {}", contentType);
     }
 
@@ -59,7 +56,6 @@ public class RequestHeadersController {
             HttpServletRequest request,
             @RequestBody Student student) {
 
-        log.info("Request to create student: {}", student);
         Enumeration<String> headerNames = request.getHeaderNames();
         while (headerNames.hasMoreElements()) {
             String key = headerNames.nextElement();
