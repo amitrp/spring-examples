@@ -3,3 +3,9 @@ logging:
     root: INFO
   pattern:
     console: "%d{HH:mm:ss,SSS} - %msg%n"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["beans"]

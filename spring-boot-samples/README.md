@@ -7,6 +7,7 @@ These examples are part of Spring & Spring Boot Tutorials on [amitph.com](https:
 - [Reading HTTP Headers in Spring REST Controller](https://www.amitph.com/spring-rest-http-header/)
 - Spring @PathVariable Examples
 - Spring Boot Filters Example
+- Getting All Spring Managed Beans
 
 
 ## How to Use
