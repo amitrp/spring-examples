@@ -9,3 +9,7 @@ management:
     web:
       exposure:
         include: ["beans"]
+
+spring:
+  main:
+    banner-mode: console # console | off | log

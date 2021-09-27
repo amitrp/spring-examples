@@ -14,8 +14,12 @@ public class Application {
     private static ApplicationContext context;
 
     public static void main(String[] args) {
-        context = SpringApplication.run(Application.class, args);
+        SpringApplication app = new SpringApplication(Application.class);
 
+        // Turn off the startup Spring Boot Banner
+//        app.setBannerMode(Banner.Mode.OFF);
+
+        context = app.run(args);
         printBeanByName();
         printBeanByType();
         printBeanNames();

@@ -9,6 +9,7 @@ These examples are part of Spring & Spring Boot Tutorials on [amitph.com](https:
 - Spring Boot Filters Example
 - Getting All Spring Managed Beans
 - Spring Autowiring by Name and Spring Bean's Custom Naming
+- How to disable Spring Boot Banner
 
 
 ## How to Use
