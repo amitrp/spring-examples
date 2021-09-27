@@ -8,6 +8,7 @@ These examples are part of Spring & Spring Boot Tutorials on [amitph.com](https:
 - Spring @PathVariable Examples
 - Spring Boot Filters Example
 - Getting All Spring Managed Beans
+- Spring Autowiring by Name and Spring Bean's Custom Naming
 
 
 ## How to Use
