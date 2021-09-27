@@ -6,7 +6,7 @@ _Covers a different examples of reading and binding properties file or yaml file
 
 > - [Using @ConfigurationProperties in Spring Boot](https://www.amitph.com/spring-boot-configuration-properties/)
 > - [Reading Nested Properties in Spring Boot](https://www.amitph.com/spring-boot-nested-configuration-properties/)
-> - YAML to Map with Spring Boot
+> - [YAML to Map with Spring Boot](https://www.amitph.com/spring-boot-yaml-to-map/)
 > - YAML to Java List of Objects in Spring Boot
 > - Validations with @ConfigurationProperties in Spring Boot
 
