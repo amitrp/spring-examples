@@ -35,3 +35,4 @@ These examples are part of Spring & Spring Boot Tutorials on https://www.amitph.
 - [Using @ConfigurationProperties in Spring Boot](https://www.amitph.com/spring-boot-configuration-properties/)
 - [Reading Nested Properties in Spring Boot](https://www.amitph.com/spring-boot-nested-configuration-properties/)
 - [Reading HTTP Headers in Spring REST Controller](https://www.amitph.com/spring-rest-http-header/)
+- [YAML to Map with Spring Boot](https://www.amitph.com/spring-boot-yaml-to-map/)
