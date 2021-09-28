@@ -9,6 +9,7 @@ These examples are part of Spring & Spring Boot Tutorials on [amitph.com](https:
 - [Downloading Large Files using Spring WebClient](https://www.amitph.com/spring-webclient-large-file-download/)
 - Parallel Requests with Spring WebClient
 - Spring WebClient Filters Examples
+- Custom Banners with Spring Boot
 
 ## How to Use
 
