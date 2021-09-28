@@ -1,5 +1,5 @@
 file-server-url: "http://localhost:8182"
-output-path: "/Users/amitphaltankar/Downloads/large2.json"
+output-path: "~/Downloads/large2.json"
 
 server:
   port: 8183
@@ -11,3 +11,10 @@ logging:
     amitph: DEBUG
   pattern:
     console: "%d{HH:mm:ss,SSS} - %msg%n"
+spring:
+ banner:
+   image:
+     width: 50
+     height: 15
+     margin: 10
+     invert: true
