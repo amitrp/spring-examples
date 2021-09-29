@@ -36,3 +36,4 @@ These examples are part of Spring & Spring Boot Tutorials on https://www.amitph.
 - [Reading Nested Properties in Spring Boot](https://www.amitph.com/spring-boot-nested-configuration-properties/)
 - [Reading HTTP Headers in Spring REST Controller](https://www.amitph.com/spring-rest-http-header/)
 - [YAML to Map with Spring Boot](https://www.amitph.com/spring-boot-yaml-to-map/)
+- [YAML to Java List of Objects in Spring Boot](https://www.amitph.com/spring-boot-yaml-to-list/)
