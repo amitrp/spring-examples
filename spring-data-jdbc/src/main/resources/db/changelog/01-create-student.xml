@@ -19,7 +19,7 @@
             </column>
             <column name="first_name" type="VARCHAR(20)"/>
             <column name="last_name" type="VARCHAR(20)"/>
-            <column name="year" type="INT"/>
+            <column name="enrollment_year" type="INT"/>
         </createTable>
         
         <addAutoIncrement

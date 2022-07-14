@@ -11,5 +11,5 @@ public class Student {
     private Long studentId;
     private String firstName;
     private String lastName;
-    private Integer year;
+    private Integer enrollmentYear;
 }
