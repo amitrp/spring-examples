@@ -5,7 +5,7 @@ These examples are part of Spring & Spring Boot Tutorials on [amitph.com](https:
 
 - [Spring @RequestParam Annotation with Examples](https://www.amitph.com/spring-requestparam-annotation/)
 - [Reading HTTP Headers in Spring REST Controller](https://www.amitph.com/spring-rest-http-header/)
-- Spring @PathVariable Examples
+- [Spring @PathVariable Examples](https://www.amitph.com/spring-pathvariable/)
 - Spring Boot Filters Example
 - Getting All Spring Managed Beans
 - Spring Autowiring by Name and Spring Bean's Custom Naming
