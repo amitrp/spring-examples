@@ -17,7 +17,7 @@ public class Application {
         SpringApplication app = new SpringApplication(Application.class);
 
         // Turn off the startup Spring Boot Banner
-//        app.setBannerMode(Banner.Mode.OFF);
+        // app.setBannerMode(Banner.Mode.OFF);
 
         context = app.run(args);
         printBeanByName();
@@ -27,18 +27,15 @@ public class Application {
 
     private static void printBeanByName() {
         String beanName = "requestStatsFilter";
-        RequestStatsFilter requestStatsFilter =
-                (RequestStatsFilter) context.getBean(beanName);
+        RequestStatsFilter requestStatsFilter = (RequestStatsFilter) context.getBean(beanName);
 
         System.out.println(beanName + " of type " + requestStatsFilter.getClass());
     }
 
     private static void printBeanByType() {
-        Map<String, Filter> filterBeans
-                = context.getBeansOfType(Filter.class);
+        Map<String, Filter> filterBeans = context.getBeansOfType(Filter.class);
 
-        filterBeans.forEach((s, filter) ->
-                System.out.println(s + " of type " + filter.getClass()));
+        filterBeans.forEach((s, filter) -> System.out.println(s + " of type " + filter.getClass()));
     }
 
     private static void printBeanNames() {
