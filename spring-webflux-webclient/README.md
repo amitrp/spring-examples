@@ -8,8 +8,9 @@ These examples are part of Spring & Spring Boot Tutorials on [amitph.com](https:
 - [Add URI Parameters to Spring WebClient Requests](https://www.amitph.com/spring-webclient-request-parameters/)
 - [Downloading Large Files using Spring WebClient](https://www.amitph.com/spring-webclient-large-file-download/)
 - [Parallel Requests with Spring WebClient](https://www.amitph.com/spring-webclient-concurrent-calls/)
+- [Custom Banners with Spring Boot](https://www.amitph.com/spring-boot-custom-banner/)
 - Spring WebClient Filters Examples
-- Custom Banners with Spring Boot
+
 
 ## How to Use
 

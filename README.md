@@ -39,3 +39,4 @@ These examples are part of Spring & Spring Boot Tutorials on https://www.amitph.
 - [YAML to Java List of Objects in Spring Boot](https://www.amitph.com/spring-boot-yaml-to-list/)
 - [Validations with @ConfigurationProperties in Spring Boot](https://www.amitph.com/spring-boot-configuration-properties-validation/)
 - [Parallel Requests with Spring WebClient](https://www.amitph.com/spring-webclient-concurrent-calls/)
+- [Custom Banners with Spring Boot](https://www.amitph.com/spring-boot-custom-banner/)
