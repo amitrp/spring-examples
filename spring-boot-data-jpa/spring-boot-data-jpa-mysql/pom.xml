@@ -41,7 +41,5 @@
         </plugins>
     </build>
 
-    <properties>
-        <start-class>com.amitph.spring.data.Application</start-class>
-    </properties>
+
 </project>
