@@ -1,11 +1,10 @@
 package com.amitph.spring.webclients;
 
 import com.amitph.spring.webclients.service.DogsFetcherWebClientService;
+import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-
-import javax.annotation.PostConstruct;
 
 @Slf4j
 @Component

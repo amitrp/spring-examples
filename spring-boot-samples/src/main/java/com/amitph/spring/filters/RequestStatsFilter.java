@@ -1,12 +1,11 @@
 package com.amitph.spring.filters;
 
+import jakarta.servlet.*;
+import jakarta.servlet.http.HttpServletRequest;
+import java.io.IOException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
-
-import javax.servlet.*;
-import javax.servlet.http.HttpServletRequest;
-import java.io.IOException;
 
 @Slf4j
 @Component
@@ -15,9 +14,8 @@ public class RequestStatsFilter implements Filter {
 
     @Override
     public void doFilter(
-            ServletRequest servletRequest,
-            ServletResponse servletResponse,
-            FilterChain filterChain) throws IOException, ServletException {
+            ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)
+            throws IOException, ServletException {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
 
         log.info("Incrementing {} request counter", request.getMethod());

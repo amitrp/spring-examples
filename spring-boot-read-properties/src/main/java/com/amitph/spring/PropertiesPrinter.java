@@ -14,10 +14,9 @@ import com.amitph.spring.properties.prefixed.LoginServiceProperties;
 import com.amitph.spring.properties.prefixed.UserServiceProperties;
 import com.amitph.spring.properties.set.SetOfObjectProperties;
 import com.amitph.spring.properties.validated.ValidatedProperties;
+import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
-
-import javax.annotation.PostConstruct;
 
 @Configuration
 @RequiredArgsConstructor

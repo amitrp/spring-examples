@@ -1,13 +1,12 @@
 package com.amitph.spring;
 
 import com.amitph.spring.filters.RequestStatsFilter;
+import jakarta.servlet.Filter;
+import java.util.Arrays;
+import java.util.Map;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-
-import javax.servlet.Filter;
-import java.util.Arrays;
-import java.util.Map;
 
 @SpringBootApplication
 public class Application {
@@ -41,9 +40,11 @@ public class Application {
     private static void printBeanNames() {
         String[] beansNames = context.getBeanDefinitionNames();
 
-        Arrays.stream(beansNames).forEach(beansName -> {
-            Object bean = context.getBean(beansName);
-            System.out.println(beansName + " of type " + bean.getClass());
-        });
+        Arrays.stream(beansNames)
+                .forEach(
+                        beansName -> {
+                            Object bean = context.getBean(beansName);
+                            System.out.println(beansName + " of type " + bean.getClass());
+                        });
     }
 }

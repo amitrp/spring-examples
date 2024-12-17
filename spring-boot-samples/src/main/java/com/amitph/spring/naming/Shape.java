@@ -1,4 +1,3 @@
 package com.amitph.spring.naming;
 
-public abstract class Shape {
-}
+public abstract class Shape {}

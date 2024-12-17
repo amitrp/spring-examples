@@ -1,13 +1,12 @@
 package com.amitph.spring.properties.map;
 
-import lombok.Data;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
+import static java.util.stream.Collectors.joining;
 
 import java.util.Map;
 import java.util.Objects;
-
-import static java.util.stream.Collectors.joining;
+import lombok.Data;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
 
 @Data
 @Configuration
@@ -21,19 +20,18 @@ public class MapProperties {
 
     @Override
     public String toString() {
-        return "application:" + NEW_LINE_TAB +
-                application.entrySet().stream()
+        return "application:"
+                + NEW_LINE_TAB
+                + application.entrySet().stream()
                         .map(Objects::toString)
                         .collect(joining(NEW_LINE_TAB))
-
-                + "\nservlet:" + NEW_LINE_TAB
-                + servlet.entrySet().stream()
-                .map(Objects::toString)
-                .collect(joining(NEW_LINE_TAB))
-
-                + "\ndatasource:" + NEW_LINE_TAB
+                + "\nservlet:"
+                + NEW_LINE_TAB
+                + servlet.entrySet().stream().map(Objects::toString).collect(joining(NEW_LINE_TAB))
+                + "\ndatasource:"
+                + NEW_LINE_TAB
                 + datasource.entrySet().stream()
-                .map(Objects::toString)
-                .collect(joining(NEW_LINE_TAB));
+                        .map(Objects::toString)
+                        .collect(joining(NEW_LINE_TAB));
     }
 }

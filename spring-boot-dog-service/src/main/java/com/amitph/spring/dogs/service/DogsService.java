@@ -3,12 +3,10 @@ package com.amitph.spring.dogs.service;
 import com.amitph.spring.dogs.model.DogDto;
 import com.amitph.spring.dogs.repo.Dog;
 import com.amitph.spring.dogs.repo.MockDogProvider;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import java.util.List;
 
 @Component
 @RequiredArgsConstructor

@@ -1,20 +1,19 @@
 package com.amitph.spring.webclients;
 
+import java.net.URI;
+import java.util.HashMap;
+import java.util.Map;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
-import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.web.reactive.function.client.ClientRequest;
 import org.springframework.web.reactive.function.client.ExchangeFilterFunction;
 import org.springframework.web.reactive.function.client.ExchangeFilterFunctions;
 import org.springframework.web.reactive.function.client.ExchangeStrategies;
 import org.springframework.web.reactive.function.client.WebClient;
-
-import java.net.URI;
-import java.util.HashMap;
-import java.util.Map;
 
 @RequiredArgsConstructor
 @Configuration
@@ -24,21 +23,21 @@ public class ApplicationConfig {
 
     @Bean
     public WebClient webClient() {
-        return WebClient.builder()
-                .baseUrl(props.getFileServerUrl())
-                .build();
+        return WebClient.builder().baseUrl(props.getFileServerUrl()).build();
     }
 
     @Bean
     public WebClient webClientWithLargeBuffer() {
         return WebClient.builder()
                 .baseUrl(props.getFileServerUrl())
-                .exchangeStrategies(ExchangeStrategies.builder()
-                        .codecs(configurer ->
-                                configurer.defaultCodecs()
-                                        .maxInMemorySize(2 * 1024)
-                        )
-                        .build())
+                .exchangeStrategies(
+                        ExchangeStrategies.builder()
+                                .codecs(
+                                        configurer ->
+                                                configurer
+                                                        .defaultCodecs()
+                                                        .maxInMemorySize(2 * 1024))
+                                .build())
                 .build();
     }
 
@@ -50,44 +49,46 @@ public class ApplicationConfig {
     public WebClient webClientWithFilter() {
         return WebClient.builder()
                 .baseUrl("http://localhost:8081")
-                .filter(changeUrlFilter()
-                        .andThen(statsFilter())
-                        .andThen(loggingFilter())
-                        .andThen(ExchangeFilterFunctions
-                                .basicAuthentication(userName, password))
-                        .andThen(ExchangeFilterFunctions
-                                .limitResponseSize(1024 * 10))
-                        .andThen(ExchangeFilterFunctions.statusError(
-                                HttpStatus::is4xxClientError,
-                                clientResponse -> {
-                                    throw new RuntimeException();
-                                }))
-                )
+                .filter(
+                        changeUrlFilter()
+                                .andThen(statsFilter())
+                                .andThen(loggingFilter())
+                                .andThen(
+                                        ExchangeFilterFunctions.basicAuthentication(
+                                                userName, password))
+                                .andThen(ExchangeFilterFunctions.limitResponseSize(1024 * 10))
+                                .andThen(
+                                        ExchangeFilterFunctions.statusError(
+                                                HttpStatusCode::is4xxClientError,
+                                                clientResponse -> {
+                                                    throw new RuntimeException();
+                                                })))
                 // Either use filter() - as above or use filters() - as in next
-//                .filters(filtersList -> {
-//                    filtersList.add(changeUrlFilter());
-//                    filtersList.add(loggingFilter());
-//                    filtersList.add(statsFilter());
-//                    filtersList.add(ExchangeFilterFunctions
-//                            .basicAuthentication(userName, password));
-//                    filtersList.add(ExchangeFilterFunctions
-//                            .limitResponseSize(1024 * 10));
-//                    filtersList.add(ExchangeFilterFunctions.statusError(
-//                            HttpStatus::is4xxClientError,
-//                            clientResponse -> {
-//                                throw new RuntimeException();
-//                            }
-//                    ));
-//                })
+                //                .filters(filtersList -> {
+                //                    filtersList.add(changeUrlFilter());
+                //                    filtersList.add(loggingFilter());
+                //                    filtersList.add(statsFilter());
+                //                    filtersList.add(ExchangeFilterFunctions
+                //                            .basicAuthentication(userName, password));
+                //                    filtersList.add(ExchangeFilterFunctions
+                //                            .limitResponseSize(1024 * 10));
+                //                    filtersList.add(ExchangeFilterFunctions.statusError(
+                //                            HttpStatusCode::is4xxClientError,
+                //                            clientResponse -> {
+                //                                throw new RuntimeException();
+                //                            }
+                //                    ));
+                //                })
                 .build();
     }
 
     private static ExchangeFilterFunction changeUrlFilter() {
         return (request, next) -> {
             String currentUrl = request.url().toString();
-            ClientRequest newRequest = ClientRequest.from(request)
-                    .url(URI.create(currentUrl.replace("8081", "8080")))
-                    .build();
+            ClientRequest newRequest =
+                    ClientRequest.from(request)
+                            .url(URI.create(currentUrl.replace("8081", "8080")))
+                            .build();
 
             return next.exchange(newRequest);
         };

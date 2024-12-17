@@ -2,7 +2,7 @@ logging:
   level:
     root: INFO
   pattern:
-    console: "%d{HH:mm:ss,SSS} - %msg%n"
+    console: "%d{HH:mm:ss} - %msg%n"
 
 management:
   endpoints:

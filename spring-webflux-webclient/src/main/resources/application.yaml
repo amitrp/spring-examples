@@ -10,7 +10,7 @@ logging:
   com:
     amitph: DEBUG
   pattern:
-    console: "%d{HH:mm:ss,SSS} - %msg%n"
+    console: "%d{HH:mm:ss} - %msg%n"
 spring:
  banner:
    image:

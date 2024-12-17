@@ -1,6 +1,6 @@
 package com.amitph.spring.songs.repo;
 
-import javax.persistence.Embeddable;
+import jakarta.persistence.Embeddable;
 import java.io.Serializable;
 
 @Embeddable
@@ -15,8 +15,7 @@ public class SongId implements Serializable {
         this.artist = artist;
     }
 
-    public SongId() {
-    }
+    public SongId() {}
 
     public String getName() {
         return name;

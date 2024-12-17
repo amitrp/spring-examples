@@ -8,18 +8,16 @@ import com.amitph.spring.songs.repo.Song;
 import com.amitph.spring.songs.repo.SongId;
 import com.amitph.spring.songs.repo.SongsRepository;
 import com.amitph.spring.songs.web.SongNotFoundException;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Component;
-
-import java.util.List;
 
 @Component
 @RequiredArgsConstructor
 public class SongsService {
     private final SongsRepository repository;
-    private  final LongKeySongRepository longKeySongRepository;
+    private final LongKeySongRepository longKeySongRepository;
 
     public Song addSong(SongDto dto) {
         return repository.save(dtoToSong(dto));
@@ -30,19 +28,49 @@ public class SongsService {
     }
 
     private Song dtoToSong(SongDto dto) {
-        return new Song(dtoToSongId(dto), dto.getDuration(), dto.getGenre(), dto.getReleaseDate(), dto.getRating(), dto.getDownloadUrl());
+        return new Song(
+                dtoToSongId(dto),
+                dto.getDuration(),
+                dto.getGenre(),
+                dto.getReleaseDate(),
+                dto.getRating(),
+                dto.getDownloadUrl());
     }
 
     private SongId dtoToSongId(SongDto dto) {
         return new SongId(dto.getName(), dto.getAlbum(), dto.getArtist());
     }
 
-
-    public List<LongKeySong> findByIdPartially(String name, String artist, String album, String coArtist, String composer, String soundEngineer, String producer, String recordingArtist) {
-        return longKeySongRepository.findByIdNameAndIdArtistAndIdAlbumAndIdCoArtistAndIdComposerAndIdSoundEngineerAndIdProducerAndIdRecordingArtist(name, artist, album, coArtist, composer, soundEngineer, producer, recordingArtist);
+    public List<LongKeySong> findByIdPartially(
+            String name,
+            String artist,
+            String album,
+            String coArtist,
+            String composer,
+            String soundEngineer,
+            String producer,
+            String recordingArtist) {
+        return longKeySongRepository
+                .findByIdNameAndIdArtistAndIdAlbumAndIdCoArtistAndIdComposerAndIdSoundEngineerAndIdProducerAndIdRecordingArtist(
+                        name,
+                        artist,
+                        album,
+                        coArtist,
+                        composer,
+                        soundEngineer,
+                        producer,
+                        recordingArtist);
     }
 
-    public List<LongKeySong> findByIdPartiallyWithExample(String name, String artist, String album, String coArtist, String composer, String soundEngineer, String producer, String recordingArtist) {
+    public List<LongKeySong> findByIdPartiallyWithExample(
+            String name,
+            String artist,
+            String album,
+            String coArtist,
+            String composer,
+            String soundEngineer,
+            String producer,
+            String recordingArtist) {
         LongKeySong longKeySong = new LongKeySong();
         LongKeySongId longKeySongId = new LongKeySongId();
         longKeySong.setId(longKeySongId);
@@ -59,5 +87,4 @@ public class SongsService {
         Example<LongKeySong> songExample = Example.of(longKeySong);
         return longKeySongRepository.findAll(songExample);
     }
-
 }

@@ -13,12 +13,14 @@ public class WebClientWithFilterService {
     private final WebClient webClientWithFilter;
 
     public void fetchResource(Long id) {
-        Dog dog = webClientWithFilter
-                .get()
-                .uri("/dogs/{id}", id)
-                .retrieve()
-                .bodyToMono(Dog.class)
-                .share().block();
+        Dog dog =
+                webClientWithFilter
+                        .get()
+                        .uri("/dogs/{id}", id)
+                        .retrieve()
+                        .bodyToMono(Dog.class)
+                        .share()
+                        .block();
         log.info("Retrieved Dog: {}", dog);
     }
 }

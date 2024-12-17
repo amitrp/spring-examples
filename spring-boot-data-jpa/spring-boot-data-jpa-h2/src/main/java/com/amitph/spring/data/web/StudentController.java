@@ -2,6 +2,7 @@ package com.amitph.spring.data.web;
 
 import com.amitph.spring.data.repo.Student;
 import com.amitph.spring.data.repo.StudentRepository;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -12,8 +13,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -40,12 +39,9 @@ public class StudentController {
     }
 
     @PatchMapping("/students/{id}")
-    public void patchResource(
-            @PathVariable long id,
-            @RequestBody StudentDto studentDto) {
+    public void patchResource(@PathVariable long id, @RequestBody StudentDto studentDto) {
 
-        Student student = studentRepository
-                .findById(id).orElseThrow(StudentNotFoundException::new);
+        Student student = studentRepository.findById(id).orElseThrow(StudentNotFoundException::new);
 
         boolean needUpdate = false;
 
