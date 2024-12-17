@@ -18,7 +18,8 @@ public class SongsController {
     private final SongsService service;
 
     @GetMapping("/artist/{artist}/album/{album}/name/{name}")
-    public Song getSong(@PathVariable String artist, @PathVariable String album, @PathVariable String name) {
+    public Song getSong(
+            @PathVariable String artist, @PathVariable String album, @PathVariable String name) {
         SongDto dto = new SongDto();
         dto.setName(name);
         dto.setArtist(artist);

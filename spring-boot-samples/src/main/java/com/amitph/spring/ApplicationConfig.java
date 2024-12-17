@@ -15,8 +15,7 @@ public class ApplicationConfig {
 
     @Bean
     public FilterRegistrationBean<V2LoggingFilter> v2LoggingFilter() {
-        FilterRegistrationBean<V2LoggingFilter> registrationBean
-                = new FilterRegistrationBean<>();
+        FilterRegistrationBean<V2LoggingFilter> registrationBean = new FilterRegistrationBean<>();
 
         registrationBean.setFilter(new V2LoggingFilter());
         registrationBean.addUrlPatterns("/v2/*");

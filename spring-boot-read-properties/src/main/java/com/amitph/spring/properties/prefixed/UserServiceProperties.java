@@ -14,8 +14,6 @@ public class UserServiceProperties {
 
     @Override
     public String toString() {
-        return "url: " + url
-                + ",\nusername: " + username
-                + ",\npassword: " + password;
+        return "url: " + url + ",\nusername: " + username + ",\npassword: " + password;
     }
 }

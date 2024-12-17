@@ -1,13 +1,12 @@
 package com.amitph.spring.properties.list;
 
-import lombok.Data;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
+import static java.util.stream.Collectors.joining;
 
 import java.util.List;
 import java.util.Map;
-
-import static java.util.stream.Collectors.joining;
+import lombok.Data;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
 
 @Data
 @Configuration
@@ -18,8 +17,6 @@ public class ListOfMapProperties {
     @Override
     public String toString() {
         return "miscellaneous: \n\t"
-                + miscellaneous.stream()
-                .map(Object::toString)
-                .collect(joining("\n\t"));
+                + miscellaneous.stream().map(Object::toString).collect(joining("\n\t"));
     }
 }

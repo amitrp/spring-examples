@@ -1,8 +1,7 @@
 package com.amitph.spring.nonweb.service;
 
-import org.springframework.stereotype.Service;
-
 import java.util.Arrays;
+import org.springframework.stereotype.Service;
 
 @Service
 public class NonWebService {

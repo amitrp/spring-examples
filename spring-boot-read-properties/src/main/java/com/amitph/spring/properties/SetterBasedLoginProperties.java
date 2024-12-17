@@ -10,7 +10,7 @@ public class SetterBasedLoginProperties {
     private String username;
     private String password;
 
-    public SetterBasedLoginProperties(){}
+    public SetterBasedLoginProperties() {}
 
     public void setLoginUrl(String loginUrl) {
         this.loginUrl = loginUrl;
@@ -26,8 +26,6 @@ public class SetterBasedLoginProperties {
 
     @Override
     public String toString() {
-        return "loginUrl: " + loginUrl
-                + ",\nusername: " + username
-                + ",\npassword: " + password;
+        return "loginUrl: " + loginUrl + ",\nusername: " + username + ",\npassword: " + password;
     }
 }

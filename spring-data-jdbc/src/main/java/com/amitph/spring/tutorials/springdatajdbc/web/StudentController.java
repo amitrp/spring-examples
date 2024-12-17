@@ -2,6 +2,7 @@ package com.amitph.spring.tutorials.springdatajdbc.web;
 
 import com.amitph.spring.tutorials.springdatajdbc.repo.Student;
 import com.amitph.spring.tutorials.springdatajdbc.repo.StudentRepository;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.StringUtils;
@@ -10,8 +11,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 @RestController
 @Slf4j

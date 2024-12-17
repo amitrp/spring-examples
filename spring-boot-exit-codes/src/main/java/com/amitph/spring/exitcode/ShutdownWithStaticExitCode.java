@@ -30,8 +30,7 @@ public class ShutdownWithStaticExitCode {
                 throw new ValueTooSmallException("Value should be >= 100");
             }
 
-            System.exit(
-                    SpringApplication.exit(applicationContext, () -> 11));
+            System.exit(SpringApplication.exit(applicationContext, () -> 11));
         };
     }
 
@@ -48,8 +47,7 @@ public class ShutdownWithStaticExitCode {
                 throw new ValueTooSmallException("Value should be >= 100");
             }
 
-            System.exit(
-                    SpringApplication.exit(applicationContext, () -> 11));
+            System.exit(SpringApplication.exit(applicationContext, () -> 11));
         };
     }
 

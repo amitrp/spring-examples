@@ -14,8 +14,6 @@ public class LoginServiceProperties {
 
     @Override
     public String toString() {
-        return "loginUrl: " + loginUrl
-                + ",\nusername: " + username
-                + ",\npassword: " + password;
+        return "loginUrl: " + loginUrl + ",\nusername: " + username + ",\npassword: " + password;
     }
 }

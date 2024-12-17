@@ -1,12 +1,11 @@
 package com.amitph.spring.requestparam;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class RequestParamExampleController {
@@ -17,9 +16,7 @@ public class RequestParamExampleController {
     }
 
     @GetMapping("/data2")
-    public String multiParam(
-            @RequestParam String id,
-            @RequestParam String name) {
+    public String multiParam(@RequestParam String id, @RequestParam String name) {
 
         return "id: " + id + ", name: " + name;
     }
@@ -35,8 +32,7 @@ public class RequestParamExampleController {
     }
 
     @GetMapping("/data5")
-    public String optionalParams
-            (@RequestParam(required = false) Long id) {
+    public String optionalParams(@RequestParam(required = false) Long id) {
         return "id: " + id;
     }
 
@@ -46,20 +42,17 @@ public class RequestParamExampleController {
     }
 
     @GetMapping("/data7")
-    public String defaultParams
-            (@RequestParam(defaultValue = "Unknown") String id) {
+    public String defaultParams(@RequestParam(defaultValue = "Unknown") String id) {
         return "id: " + id;
     }
 
     @GetMapping("/data8")
-    public String namedParams
-            (@RequestParam(name = "id") String dataId) {
+    public String namedParams(@RequestParam(name = "id") String dataId) {
         return "dataId: " + dataId;
     }
 
     @GetMapping("/data9")
-    public String mappedParams
-            (@RequestParam Map<String, String> dataQuery) {
+    public String mappedParams(@RequestParam Map<String, String> dataQuery) {
 
         return dataQuery.toString();
     }

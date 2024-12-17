@@ -1,10 +1,9 @@
 package com.amitph.spring.dogs.repo;
 
 import com.amitph.spring.dogs.model.DogDto;
-import org.springframework.stereotype.Component;
-
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.stereotype.Component;
 
 @Component
 public class MockDogProvider {

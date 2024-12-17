@@ -1,10 +1,9 @@
 package com.amitph.spring.dogs;
 
+import java.util.Arrays;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
-
-import java.util.Arrays;
 
 @Order(1)
 @Component

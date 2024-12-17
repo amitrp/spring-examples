@@ -14,8 +14,11 @@ public class SimpleProperties {
 
     @Override
     public String toString() {
-        return "defaultUsername: " + defaultUsername
-                + ",\ndefaultPassword: " + defaultPassword
-                + ",\nconnectionTimeout: " + connectionTimeout;
+        return "defaultUsername: "
+                + defaultUsername
+                + ",\ndefaultPassword: "
+                + defaultPassword
+                + ",\nconnectionTimeout: "
+                + connectionTimeout;
     }
 }

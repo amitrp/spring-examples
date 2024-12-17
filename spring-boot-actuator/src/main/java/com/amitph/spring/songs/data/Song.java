@@ -1,14 +1,12 @@
 package com.amitph.spring.songs.data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
 @Entity
 public class Song {
-    @Id
-    @GeneratedValue
-    private Long songId;
+    @Id @GeneratedValue private Long songId;
 
     private String title;
     private String album;

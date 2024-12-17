@@ -35,15 +35,23 @@ public class NestedClassesProperties {
     @Override
     public String toString() {
         return "loginService: "
-                + "\n\tloginUrl: " + loginService.getLoginUrl()
-                + "\n\tusername: " + loginService.getUsername()
-                + "\n\tpassword: " + loginService.getPassword()
+                + "\n\tloginUrl: "
+                + loginService.getLoginUrl()
+                + "\n\tusername: "
+                + loginService.getUsername()
+                + "\n\tpassword: "
+                + loginService.getPassword()
                 + "\n\theader: "
-                + "\n\t\tauthToken: " + loginService.getHeader().getAuthToken()
-                + "\n\t\tcontent: " + loginService.getHeader().getContent()
+                + "\n\t\tauthToken: "
+                + loginService.getHeader().getAuthToken()
+                + "\n\t\tcontent: "
+                + loginService.getHeader().getContent()
                 + "\nuserService: "
-                + "\n\turl: " + userService.getUrl()
-                + "\n\tusername: " + userService.getUsername()
-                + "\n\tpassword: " + userService.getPassword();
+                + "\n\turl: "
+                + userService.getUrl()
+                + "\n\tusername: "
+                + userService.getUsername()
+                + "\n\tpassword: "
+                + userService.getPassword();
     }
 }

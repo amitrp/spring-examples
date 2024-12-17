@@ -1,7 +1,7 @@
 package com.amitph.spring.songs.repo;
 
-import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
+import jakarta.persistence.EmbeddedId;
+import jakarta.persistence.Entity;
 import java.time.LocalDateTime;
 
 @Entity
@@ -13,7 +13,13 @@ public class Song {
     int rating;
     private String downloadUrl;
 
-    public Song(SongId id, int duration, String genre, LocalDateTime releaseDate, int rating, String downloadUrl) {
+    public Song(
+            SongId id,
+            int duration,
+            String genre,
+            LocalDateTime releaseDate,
+            int rating,
+            String downloadUrl) {
         this.id = id;
         this.duration = duration;
         this.genre = genre;
@@ -22,8 +28,7 @@ public class Song {
         this.downloadUrl = downloadUrl;
     }
 
-    public Song() {
-    }
+    public Song() {}
 
     public SongId getId() {
         return id;

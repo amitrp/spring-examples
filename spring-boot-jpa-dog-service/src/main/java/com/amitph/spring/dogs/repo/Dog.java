@@ -1,19 +1,20 @@
 package com.amitph.spring.dogs.repo;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 @Entity
 public class Dog {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
     private String name;
     private int age;
 
-    public Dog(){}
+    public Dog() {}
 
     public Dog(String name, int age) {
         this.name = name;
@@ -45,7 +46,7 @@ public class Dog {
     }
 
     @Override
-    public String toString(){
-        return "id: " + this.id + ", name: " + this.name + ", age: "+this.age;
+    public String toString() {
+        return "id: " + this.id + ", name: " + this.name + ", age: " + this.age;
     }
 }
